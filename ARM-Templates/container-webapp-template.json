@@ -3,11 +3,11 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "webAppName": {
-            "defaultValue": "kalina-devops-dev",
+            "defaultValue": "kalinadevops-dev",
             "type": "String"
         },
         "hostingPlanName": {
-            "defaultValue": "kalina-devops-asp",
+            "defaultValue": "kalinadevops-asp",
             "type": "String"
         },
         "appInsightsLocation": {
@@ -15,7 +15,7 @@
             "type": "String"
         },
         "appInsightsName": {
-            "defaultValue": "kalina-devops-ai",
+            "defaultValue": "kalinadevops-ai",
             "type": "String"
         },        
         "sku": {
@@ -23,11 +23,11 @@
             "type": "String"
         },
         "registryName": {
-            "defaultValue": "kalina-devopsreg",
+            "defaultValue": "kalinadevopsreg",
             "type": "String"
         },
         "imageName": {
-            "defaultValue": "kalina-devopsimage",
+            "defaultValue": "kalinadevopsimage",
             "type":"String"
         },
         "registryLocation": {
