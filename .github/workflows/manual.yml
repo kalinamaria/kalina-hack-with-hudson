@@ -2,6 +2,9 @@
 
 name: Initial workflow
 
+env:
+  targetEnv: dev
+
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
 on:
@@ -36,3 +39,8 @@ jobs:
       with:
         # Provide the scope of the deployment. Valid values are: 'resourcegroup', 'managementgroup', 'subscription'
         scope: resourcegroup
+        subscriptionId: ${{ secrets.SUBSCRIPTION_ID }}
+        resourceGroupName: kalina-rg
+        template: ./ARM-Templates/container-webapp-template.json
+        parameters: webAppName=kalina-devops-${{ env.targetEnv }}
+
