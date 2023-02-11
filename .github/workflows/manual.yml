@@ -40,7 +40,7 @@ jobs:
         # Provide the scope of the deployment. Valid values are: 'resourcegroup', 'managementgroup', 'subscription'
         scope: resourcegroup
         subscriptionId: ${{ secrets.SUBSCRIPTION_ID }}
-        resourceGroupName: kalina-rg
+        resourceGroupName: 'kalina-rg'
         template: ./ARM-Templates/container-webapp-template.json
         parameters: webAppName=kalina-devops-${{ env.targetEnv }}
 
